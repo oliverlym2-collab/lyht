@@ -11,8 +11,8 @@
 
     <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-            <a href="index.html" class="font-bold text-2xl tracking-widest text-[#8b1818]">廖元和堂<i class="hidden">[cite: 681]</i></a>
-            <div class="hidden md:flex space-x-6 font-medium text-sm">
+            <a href="index.html" class="font-bold text-2xl tracking-widest text-[#8b1818]">廖元和堂</a>
+            <div class="hidden md:flex space-x-6 font-medium text-sm items-center">
                 <a href="index.html" class="text-gray-500 hover:text-black">首页</a>
                 <a href="culture.html" class="text-gray-500 hover:text-black">品牌文化</a>
                 <a href="history.html" class="text-gray-500 hover:text-black">百年历程</a>
@@ -22,30 +22,45 @@
                 <a href="video.html" class="text-gray-500 hover:text-black">品牌影像</a>
                 <a href="gallery.html" class="text-gray-500 hover:text-black">品牌图集</a>
             </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-900 focus:outline-none p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 py-4 px-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block text-gray-600 hover:text-black">首页</a>
+            <a href="culture.html" class="block text-gray-600 hover:text-black">品牌文化</a>
+            <a href="history.html" class="block text-gray-600 hover:text-black">百年历程</a>
+            <a href="products.html" class="block text-black font-bold">主导产品</a>
+            <a href="research.html" class="block text-gray-600 hover:text-black">学研合作</a>
+            <a href="honors.html" class="block text-gray-600 hover:text-black">市场与荣誉</a>
+            <a href="video.html" class="block text-gray-600 hover:text-black">品牌影像</a>
+            <a href="gallery.html" class="block text-gray-600 hover:text-black">品牌图集</a>
         </div>
     </nav>
 
     <header class="pt-32 pb-16 text-center px-4">
-        <h1 class="text-5xl font-bold mb-6">中药研新，主导产品<i class="hidden">[cite: 682]</i></h1>
+        <h1 class="text-5xl font-bold mb-6">中药研新，主导产品</h1>
         <p class="text-xl text-gray-500">以现代科技赋能经典名方，造福中国万千百姓。</p>
     </header>
 
     <section class="max-w-7xl mx-auto px-4 py-12">
         <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row">
             <div class="md:w-1/2 bg-gray-50 p-12 flex items-center justify-center relative">
-                <img src="product-huafeng.jpg" alt="化风丹" class="w-full h-auto object-contain max-h-[400px]">
+                <img src="huafengdan.jpg" alt="化风丹" class="w-full h-auto object-contain max-h-[400px]">
                 <p class="absolute bottom-4 text-gray-400 text-xs"></p>
             </div>
             <div class="md:w-1/2 p-12 md:p-16">
-                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold mb-6 inline-block">国家级非物质文化遗产<i class="hidden">[cite: 688]</i></span>
-                <h2 class="text-4xl font-bold mb-6">化风丹<i class="hidden">[cite: 685]</i></h2>
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold mb-6 inline-block">国家级非物质文化遗产</span>
+                <h2 class="text-4xl font-bold mb-6">化风丹</h2>
                 <div class="space-y-4 text-gray-600">
-                    <p><strong>适应症：</strong>用于风痰闭阻、中风偏瘫、癫痫、面神经麻痹，口眼歪斜。<i class="hidden">[cite: 701]</i></p>
-                    <p><strong>核心壁垒：</strong>目前治疗脑卒中临床用药中唯一不是以“活血化瘀”作为治疗机制的药物，其药母发酵工艺为全国独家。<i class="hidden">[cite: 706]</i></p>
+                    <p><strong>适应症：</strong>用于风痰闭阻、中风偏瘫、癫痫、面神经麻痹，口眼歪斜。</p>
+                    <p><strong>核心壁垒：</strong>目前治疗脑卒中临床用药中唯一不是以“活血化瘀”作为治疗机制的药物，其药母发酵工艺为全国独家。</p>
                 </div>
                 <div class="mt-8 pt-8 border-t border-gray-100">
                     <p class="text-sm font-bold mb-2">独家组方：</p>
-                    <p class="text-sm text-gray-500">药母：紫苏叶、荆芥、僵蚕、全蝎。<i class="hidden">[cite: 703]</i> 辅以：天南星(制)、苍术、雄黄、硼砂、巴豆霜、天麻、人工麝香、冰片、檀香、朱砂。<i class="hidden">[cite: 704, 705]</i></p>
+                    <p class="text-sm text-gray-500">药母：紫苏叶、荆芥、僵蚕、全蝎。 辅以：天南星(制)、苍术、雄黄、硼砂、巴豆霜、天麻、人工麝香、冰片、檀香、朱砂。</p>
                 </div>
             </div>
         </div>
@@ -54,24 +69,29 @@
     <section class="max-w-7xl mx-auto px-4 pb-20">
         <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row-reverse">
             <div class="md:w-1/2 bg-gray-50 p-12 flex flex-col items-center justify-center gap-6 relative">
-                <img src="product-shengjing.jpg" alt="生精胶囊" class="w-full h-auto object-contain max-h-[300px]">
+                <img src="shengjing.jpg" alt="生精胶囊" class="w-full h-auto object-contain max-h-[300px]">
                 <p class="absolute bottom-4 text-gray-400 text-xs"></p>
             </div>
             <div class="md:w-1/2 p-12 md:p-16">
-                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold mb-6 inline-block">国家发明专利<i class="hidden">[cite: 829]</i></span>
-                <h2 class="text-4xl font-bold mb-6">生精胶囊<i class="hidden">[cite: 826]</i></h2>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold mb-6 inline-block">国家发明专利</span>
+                <h2 class="text-4xl font-bold mb-6">生精胶囊</h2>
                 <div class="space-y-4 text-gray-600">
-                    <p><strong>适应症：</strong>补肾益精，滋阴壮阳。用于肾阳不足所致腰膝酸软，头晕耳鸣，神疲乏力，男子无精、少精、弱精，精液不液化等症。<i class="hidden">[cite: 832]</i></p>
-                    <p><strong>市场与疗效：</strong>成方于70年代，2005年获国家发明专利。稳居专科领域榜首，是《男性不育症中西医结合多学科诊疗指南(2023版)》等共识推荐用药。<i class="hidden">[cite: 839, 853]</i></p>
+                    <p><strong>适应症：</strong>补肾益精，滋阴壮阳。用于肾阳不足所致腰膝酸软，头晕耳鸣，神疲乏力，男子无精、少精、弱精，精液不液化等症。</p>
+                    <p><strong>市场与疗效：</strong>成方于70年代，2005年获国家发明专利。稳居专科领域榜首，是《男性不育症中西医结合多学科诊疗指南(2023版)》等共识推荐用药。</p>
                 </div>
                 <div class="mt-8 pt-8 border-t border-gray-100">
                     <p class="text-sm font-bold mb-2">独特组方：</p>
-                    <p class="text-sm text-gray-500">鹿茸、枸杞子、人参、冬虫夏草、菟丝子、沙苑子、淫羊藿、黄精、何首乌、桑椹、补骨脂、骨碎补、仙茅、金樱子等。<i class="hidden">[cite: 834, 835, 836]</i></p>
+                    <p class="text-sm text-gray-500">鹿茸、枸杞子、人参、冬虫夏草、菟丝子、沙苑子、淫羊藿、黄精、何首乌、桑椹、补骨脂、骨碎补、仙茅、金樱子等。</p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="py-8 text-center text-sm text-gray-500 border-t border-gray-200"><p>© 2026 遵义廖元和堂药业有限公司.</p></footer>
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        if(btn && menu) { btn.addEventListener('click', () => { menu.classList.toggle('hidden'); }); }
+    </script>
 </body>
 </html>

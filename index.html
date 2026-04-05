@@ -11,8 +11,8 @@
 
     <nav class="fixed w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-            <a href="index.html" class="font-bold text-2xl tracking-widest text-white">廖元和堂<i class="hidden"></i></a>
-            <div class="hidden md:flex space-x-6 font-medium text-sm">
+            <a href="index.html" class="font-bold text-2xl tracking-widest text-white">廖元和堂</a>
+            <div class="hidden md:flex space-x-6 font-medium text-sm items-center">
                 <a href="index.html" class="text-white border-b-2 border-white pb-1">首页</a>
                 <a href="culture.html" class="text-gray-400 hover:text-white">品牌文化</a>
                 <a href="history.html" class="text-gray-400 hover:text-white">百年历程</a>
@@ -22,17 +22,32 @@
                 <a href="video.html" class="text-gray-400 hover:text-white">品牌影像</a>
                 <a href="gallery.html" class="text-gray-400 hover:text-white">品牌图集</a>
             </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-white focus:outline-none p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black/95 border-t border-gray-800 py-4 px-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block text-white font-bold">首页</a>
+            <a href="culture.html" class="block text-gray-400 hover:text-white">品牌文化</a>
+            <a href="history.html" class="block text-gray-400 hover:text-white">百年历程</a>
+            <a href="products.html" class="block text-gray-400 hover:text-white">主导产品</a>
+            <a href="research.html" class="block text-gray-400 hover:text-white">学研合作</a>
+            <a href="honors.html" class="block text-gray-400 hover:text-white">市场与荣誉</a>
+            <a href="video.html" class="block text-gray-400 hover:text-white">品牌影像</a>
+            <a href="gallery.html" class="block text-gray-400 hover:text-white">品牌图集</a>
         </div>
     </nav>
 
     <main class="flex-grow flex flex-col items-center justify-center text-center px-4 pt-32 pb-20">
-        <span class="text-red-500 font-bold tracking-[0.3em] text-sm mb-6 uppercase">China Time-honored Brand<i class="hidden"></i></span>
-        <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tight">传承中医文化<br>守护百姓安康<i class="hidden"></i></h1>
-        <p class="text-xl text-gray-400 max-w-2xl font-light mb-16">始创立于 1710 年，历时三百余年品质沉淀。<i class="hidden"></i><br>高起点、高标准、高科技、高品质，打造全产业链发展模式。<i class="hidden"></i></p>
+        <span class="text-red-500 font-bold tracking-[0.3em] text-sm mb-6 uppercase">China Time-honored Brand</span>
+        <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tight">传承中医文化<br>守护百姓安康</h1>
+        <p class="text-xl text-gray-400 max-w-2xl font-light mb-16">始创立于 1710 年，历时三百余年品质沉淀。<br>高起点、高标准、高科技、高品质，打造全产业链发展模式。</p>
         
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-gray-500 text-sm tracking-widest mb-24">
-            <p>中药种植<i class="hidden"></i></p><p>组方研制<i class="hidden"></i></p><p>工艺精益<i class="hidden"></i></p>
-            <p>成药生产<i class="hidden"></i></p><p>市场销售<i class="hidden"></i></p><p>学研转化<i class="hidden"></i></p>
+            <p>中药种植</p><p>组方研制</p><p>工艺精益</p>
+            <p>成药生产</p><p>市场销售</p><p>学研转化</p>
         </div>
 
         <div class="flex flex-wrap justify-center gap-6">
@@ -44,5 +59,10 @@
     <footer class="py-8 text-center text-xs text-gray-700 border-t border-gray-900">
         <p>© 2026 遵义廖元和堂药业有限公司.</p>
     </footer>
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        if(btn && menu) { btn.addEventListener('click', () => { menu.classList.toggle('hidden'); }); }
+    </script>
 </body>
 </html>

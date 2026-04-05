@@ -16,7 +16,7 @@
     <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
             <a href="index.html" class="font-bold text-2xl tracking-widest text-[#8b1818]">廖元和堂</a>
-            <div class="hidden md:flex space-x-6 font-medium text-sm">
+            <div class="hidden md:flex space-x-6 font-medium text-sm items-center">
                 <a href="index.html" class="text-gray-500 hover:text-black">首页</a>
                 <a href="culture.html" class="text-gray-500 hover:text-black">品牌文化</a>
                 <a href="history.html" class="text-black border-b-2 border-black pb-1">百年历程</a>
@@ -26,11 +26,26 @@
                 <a href="video.html" class="text-gray-500 hover:text-black">品牌影像</a>
                 <a href="gallery.html" class="text-gray-500 hover:text-black">品牌图集</a>
             </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-900 focus:outline-none p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 py-4 px-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block text-gray-600 hover:text-black">首页</a>
+            <a href="culture.html" class="block text-gray-600 hover:text-black">品牌文化</a>
+            <a href="history.html" class="block text-black font-bold">百年历程</a>
+            <a href="products.html" class="block text-gray-600 hover:text-black">主导产品</a>
+            <a href="research.html" class="block text-gray-600 hover:text-black">学研合作</a>
+            <a href="honors.html" class="block text-gray-600 hover:text-black">市场与荣誉</a>
+            <a href="video.html" class="block text-gray-600 hover:text-black">品牌影像</a>
+            <a href="gallery.html" class="block text-gray-600 hover:text-black">品牌图集</a>
         </div>
     </nav>
 
     <header class="pt-40 pb-16 text-center px-4">
-        <h1 class="text-5xl font-bold mb-6">嫡传正宗，渊源流长<i class="hidden">[cite: 652]</i></h1>
+        <h1 class="text-5xl font-bold mb-6">嫡传正宗，渊源流长</h1>
         <p class="text-xl text-gray-500">跨越三百余年的品质沉淀与匠心传承。</p>
     </header>
 
@@ -42,8 +57,8 @@
                 <div class="hidden md:block w-5/12"></div>
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-12 md:text-right">
-                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1644 年<i class="hidden">[cite: 651]</i></h3>
-                    <p class="text-gray-600">廖家先祖避灾长板桥镇，发现娄山药材种类多，不乏珍稀药材。遂潜心研制祖上传承秘方，治疗当时痧气、偏瘫、中风、小儿急惊风等症均有奇效。此药被周围乡邻称为“廖家旅行必备之良药”。<i class="hidden">[cite: 708]</i></p>
+                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1644 年</h3>
+                    <p class="text-gray-600">廖家先祖避灾长板桥镇，发现娄山药材种类多，不乏珍稀药材。遂潜心研制祖上传承秘方，治疗当时痧气、偏瘫、中风、小儿急惊风等症均有奇效。此药被周围乡邻称为“廖家旅行必备之良药”。</p>
                 </div>
             </div>
 
@@ -52,7 +67,7 @@
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-12 text-left">
                     <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1710 年</h3>
-                    <p class="text-gray-600">廖家店铺取名为“廖元和堂”，祖传秘方命名为“化风丹”。定下“廖家后人必须以制售化风丹为业”且“传媳不传儿”的祖训。<i class="hidden">[cite: 640]</i></p>
+                    <p class="text-gray-600">廖家店铺取名为“廖元和堂”，祖传秘方命名为“化风丹”。定下“廖家后人必须以制售化风丹为业”且“传媳不传儿”的祖训。</p>
                 </div>
             </div>
 
@@ -60,7 +75,7 @@
                 <div class="hidden md:block w-5/12"></div>
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-12 md:text-right">
-                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1940 年<i class="hidden">[cite: 654]</i></h3>
+                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1940 年</h3>
                     <p class="text-gray-600">宗陈月仙举家搬迁到遵义市。时大亡千劫，仍振兴家业，独自经营“廖元和堂化风丹”。</p>
                 </div>
             </div>
@@ -69,7 +84,7 @@
                 <div class="hidden md:block w-5/12"></div>
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-12 text-left">
-                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1965 年<i class="hidden">[cite: 659]</i></h3>
+                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1965 年</h3>
                     <p class="text-gray-600">公私合营，由陈月仙、孤恩伯两位担任资方厂长。</p>
                 </div>
             </div>
@@ -78,7 +93,7 @@
                 <div class="hidden md:block w-5/12"></div>
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-12 md:text-right">
-                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1985 年<i class="hidden">[cite: 660]</i></h3>
+                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">1985 年</h3>
                     <p class="text-gray-600">创办了“侨联企业总公司元和堂药厂”，恢复了百年祖传秘方“廖元和堂化风丹”的生产。</p>
                 </div>
             </div>
@@ -87,7 +102,7 @@
                 <div class="hidden md:block w-5/12"></div>
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-12 text-left">
-                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">2003 年<i class="hidden">[cite: 661]</i></h3>
+                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">2003 年</h3>
                     <p class="text-gray-600">经过资产重组及改制恢复了廖家名号，由原遵义雪峰制药厂更名为“遵义廖元和堂药业有限公司”。</p>
                 </div>
             </div>
@@ -96,8 +111,8 @@
                 <div class="hidden md:block w-5/12"></div>
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-12 md:text-right">
-                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">2008 年<i class="hidden">[cite: 653]</i></h3>
-                    <p class="text-gray-600">化风丹制作技艺荣获文化部颁发“国家级非物质文化遗产”称号。<i class="hidden">[cite: 688, 689]</i></p>
+                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">2008 年</h3>
+                    <p class="text-gray-600">化风丹制作技艺荣获文化部颁发“国家级非物质文化遗产”称号。</p>
                 </div>
             </div>
 
@@ -105,7 +120,7 @@
                 <div class="hidden md:block w-5/12"></div>
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-12 text-left">
-                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">2009 年<i class="hidden">[cite: 657]</i></h3>
+                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">2009 年</h3>
                     <p class="text-gray-600">荣获“国家级高新技术企业”称号。</p>
                 </div>
             </div>
@@ -114,13 +129,18 @@
                 <div class="hidden md:block w-5/12"></div>
                 <div class="absolute left-[24px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-[#8b1818] rounded-full ring-4 ring-white"></div>
                 <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-12 md:text-right">
-                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">2011 年<i class="hidden">[cite: 662]</i></h3>
-                    <p class="text-gray-600">1月荣获商务部颁发的“中华老字号”称号。<i class="hidden">[cite: 710]</i></p>
+                    <h3 class="text-3xl font-bold text-[#8b1818] mb-2">2011 年</h3>
+                    <p class="text-gray-600">1月荣获商务部颁发的“中华老字号”称号。</p>
                 </div>
             </div>
         </div>
     </main>
 
     <footer class="bg-gray-100 py-8 text-center text-sm text-gray-500 mt-20"><p>© 2026 遵义廖元和堂药业有限公司.</p></footer>
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        if(btn && menu) { btn.addEventListener('click', () => { menu.classList.toggle('hidden'); }); }
+    </script>
 </body>
 </html>
