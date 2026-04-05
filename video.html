@@ -5,88 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>品牌影像 | 廖元和堂</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>document.addEventListener('DOMContentLoaded',()=>{document.body.innerHTML=document.body.innerHTML.replace(/\/g,'');});</script>
     <style>
         body { background: #000; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
         .aspect-video-native { aspect-ratio: 16 / 9; }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover { color: #fff; }
     </style>
 </head>
 <body class="antialiased">
 
-    <nav class="fixed w-full bg-black/80 backdrop-blur-xl z-50 border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="font-bold text-2xl tracking-widest text-white">廖元和堂</a>
-                
-                <div class="hidden lg:flex items-center gap-5 text-xs font-medium text-gray-400">
-                    <a href="index.html" class="hover:text-white transition-colors">首页</a>
-                    <a href="culture.html" class="hover:text-white transition-colors">品牌文化</a>
-                    <a href="history.html" class="hover:text-white transition-colors">百年历程</a>
-                    <a href="products.html" class="hover:text-white transition-colors">主要产品</a>
-                    <a href="research.html" class="hover:text-white transition-colors">学研合作</a>
-                    <a href="honors.html" class="hover:text-white transition-colors">市场与荣誉</a>
-                    <a href="video.html" class="text-white border-b border-white pb-1">品牌影像</a>
-                    <a href="gallery.html" class="hover:text-white transition-colors">品牌图集</a>
-                </div>
-
-                <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-white focus:outline-none p-2">
-                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-                    </button>
-                </div>
+    <nav class="fixed w-full bg-black/60 backdrop-blur-xl z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+            <a href="index.html" class="font-bold text-2xl tracking-widest text-white">廖元和堂</a>
+            <div class="hidden md:flex space-x-6 font-medium text-sm">
+                <a href="index.html" class="text-gray-400 nav-link">首页</a>
+                <a href="culture.html" class="text-gray-400 nav-link">品牌文化</a>
+                <a href="history.html" class="text-gray-400 nav-link">百年历程</a>
+                <a href="products.html" class="text-gray-400 nav-link">主导产品</a>
+                <a href="research.html" class="text-gray-400 nav-link">学研合作</a>
+                <a href="honors.html" class="text-gray-400 nav-link">市场与荣誉</a>
+                <a href="video.html" class="text-white border-b-2 border-white pb-1">品牌影像</a>
+                <a href="gallery.html" class="text-gray-400 nav-link">品牌图集</a>
             </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden bg-black/95 border-t border-white/10 py-6 px-8 space-y-4 shadow-2xl">
-            <a href="index.html" class="block text-base text-gray-300">首页</a>
-            <a href="culture.html" class="block text-base text-gray-300">品牌文化</a>
-            <a href="history.html" class="block text-base text-gray-300">百年历程</a>
-            <a href="products.html" class="block text-base text-gray-300">主要产品</a>
-            <a href="research.html" class="block text-base text-gray-300">学研合作</a>
-            <a href="honors.html" class="block text-base text-gray-300">市场与荣誉</a>
-            <a href="video.html" class="block text-base text-white font-bold">品牌影像</a>
-            <a href="gallery.html" class="block text-base text-gray-300">品牌图集</a>
         </div>
     </nav>
 
-    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto space-y-24">
-        <header class="text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">国医国药，时代强音</h1>
-            <p class="text-gray-400 max-w-2xl mx-auto">透过数字化视觉语言，记录中华老字号的匠心传承与科研跨越。</p>
-        </header>
+    <header class="pt-40 pb-12 text-center px-4">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">国医国药，时代强音</h1>
+        <p class="text-lg md:text-xl text-gray-400 font-light max-w-3xl mx-auto">透过数字化视觉语言，记录中华老字号的匠心传承与科研跨越。</p>
+    </header>
 
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="space-y-4">
-                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                    <video class="w-full h-full object-cover" controls><source src="promo.mp4" type="video/mp4"></video>
-                </div>
-                <h3 class="text-xl font-bold text-red-600">品牌宣传片</h3>
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-32">
+        
+        <section class="flex flex-col lg:flex-row-reverse gap-12 items-center">
+            <div class="w-full lg:w-2/3 aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                <video class="w-full h-full object-cover" controls>
+                    <source src="promo.mp4" type="video/mp4">
+                    您的浏览器不支持 HTML5 视频。
+                </video>
             </div>
-            <div class="space-y-4">
-                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                    <video class="w-full h-full object-cover" controls><source src="video-bili.mp4" type="video/mp4"></video>
-                </div>
-                <h3 class="text-xl font-bold text-red-600">Bilibili 专题报道</h3>
+            <div class="w-full lg:w-1/3 text-left">
+                <span class="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">官方宣传</span>
+                <h2 class="text-3xl font-bold mb-6 italic">高起点、高标准、高科技、高品质</h2>
+                <p class="text-gray-400 leading-relaxed">
+                    本宣传片全景展现了廖元和堂现代化生产基地。依托贵州丰富的资源，公司已建成丸剂、胶囊剂、中药饮片等多条生产线，实现了从传统祖传向产学研创新的全产业链发展模式。
+                </p>
             </div>
-            <div class="space-y-4">
-                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                    <video class="w-full h-full object-cover" controls><source src="video-doc.mp4" type="video/mp4"></video>
-                </div>
-                <h3 class="text-xl font-bold text-red-600">历史纪实专题</h3>
+        </section>
+
+        <section class="flex flex-col lg:flex-row gap-12 items-center">
+            <div class="w-full lg:w-2/3 aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                <video class="w-full h-full object-cover" controls>
+                    <source src="video-bili.mp4" type="video/mp4">
+                </video>
             </div>
-            <div class="space-y-4">
-                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                    <video class="w-full h-full object-cover" controls><source src="video-cctv.mp4" type="video/mp4"></video>
-                </div>
-                <h3 class="text-xl font-bold text-red-600">CCTV 《品质》栏目记录</h3>
+            <div class="w-full lg:w-1/3 text-left">
+                <span class="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">品牌展示</span>
+                <h2 class="text-3xl font-bold mb-6 italic">“传承虽艰，其志可通星汉”</h2>
+                <p class="text-gray-400 leading-relaxed">
+                    通过数字化的表现形式，将核心品种“化风丹”与“生精胶囊”的生产工艺透明化。廖元和堂始终坚持“诚信经营、以人为本”的理念，致力做大做强百年民族企业。
+                </p>
             </div>
-        </div>
+        </section>
+
+        <section class="flex flex-col lg:flex-row-reverse gap-12 items-center">
+            <div class="w-full lg:w-2/3 aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                <video class="w-full h-full object-cover" controls>
+                    <source src="video-doc.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3 text-left">
+                <span class="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">历史纪实</span>
+                <h2 class="text-3xl font-bold mb-6 italic">百年薪火，代代相传</h2>
+                <p class="text-gray-400 leading-relaxed">
+                    深入探寻廖氏家族的医学渊源。廖家后人恪守“丸散虽微，其责重若泰山”的祖训，在历经三百余年的风雨长河中，始终守护中医瑰宝，推动传统医学走向世界。
+                </p>
+            </div>
+        </section>
+
+        <section class="flex flex-col lg:flex-row gap-12 items-center">
+            <div class="w-full lg:w-2/3 aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                <video class="w-full h-full object-cover" controls>
+                    <source src="video-cctv.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="w-full lg:w-1/3 text-left">
+                <span class="text-red-500 font-bold tracking-widest text-xs uppercase mb-4 block">官方认证</span>
+                <h2 class="text-3xl font-bold mb-6 italic">CCTV《品质》栏目入围记录</h2>
+                <p class="text-gray-400 leading-relaxed">
+                    本片以国家级媒体的视野，深度解读廖元和堂作为“中华老字号”的核心竞争力。通过坚持中药产品二次科研开发，廖元和堂在临床定位与药效机制上已取得显著成果。
+                </p>
+            </div>
+        </section>
+
     </main>
 
     <footer class="py-20 text-center text-gray-600 border-t border-white/5">
         <p class="text-sm">© 2026 遵义廖元和堂药业有限公司. 保留所有权利。</p>
     </footer>
-
-    <script>
+ <script>
         const btn = document.getElementById('mobile-menu-button');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
