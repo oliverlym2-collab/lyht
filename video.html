@@ -16,59 +16,70 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="font-bold text-2xl tracking-widest text-white">廖元和堂</a>
-
-                <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
+                
+                <div class="hidden lg:flex items-center gap-5 text-xs font-medium text-gray-400">
                     <a href="index.html" class="hover:text-white transition-colors">首页</a>
                     <a href="culture.html" class="hover:text-white transition-colors">品牌文化</a>
+                    <a href="history.html" class="hover:text-white transition-colors">百年历程</a>
                     <a href="products.html" class="hover:text-white transition-colors">主要产品</a>
+                    <a href="research.html" class="hover:text-white transition-colors">学研合作</a>
+                    <a href="honors.html" class="hover:text-white transition-colors">市场与荣誉</a>
                     <a href="video.html" class="text-white border-b border-white pb-1">品牌影像</a>
                     <a href="gallery.html" class="hover:text-white transition-colors">品牌图集</a>
                 </div>
 
-                <div class="md:hidden flex items-center">
+                <div class="lg:hidden flex items-center">
                     <button id="mobile-menu-button" class="text-white focus:outline-none p-2">
-                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
                     </button>
                 </div>
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden bg-black/95 border-t border-white/10 py-6 px-8 space-y-6 shadow-2xl">
-            <a href="index.html" class="block text-lg font-medium text-gray-300">首页</a>
-            <a href="culture.html" class="block text-lg font-medium text-gray-300">品牌文化</a>
-            <a href="products.html" class="block text-lg font-medium text-gray-300">主要产品</a>
-            <a href="video.html" class="block text-lg font-medium text-white font-bold">品牌影像</a>
-            <a href="gallery.html" class="block text-lg font-medium text-gray-300">品牌图集</a>
+        <div id="mobile-menu" class="hidden bg-black/95 border-t border-white/10 py-6 px-8 space-y-4 shadow-2xl">
+            <a href="index.html" class="block text-base text-gray-300">首页</a>
+            <a href="culture.html" class="block text-base text-gray-300">品牌文化</a>
+            <a href="history.html" class="block text-base text-gray-300">百年历程</a>
+            <a href="products.html" class="block text-base text-gray-300">主要产品</a>
+            <a href="research.html" class="block text-base text-gray-300">学研合作</a>
+            <a href="honors.html" class="block text-base text-gray-300">市场与荣誉</a>
+            <a href="video.html" class="block text-base text-white font-bold">品牌影像</a>
+            <a href="gallery.html" class="block text-base text-gray-300">品牌图集</a>
         </div>
     </nav>
 
-    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto space-y-32">
+    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto space-y-24">
         <header class="text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">国医国药，时代强音</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">国医国药，时代强音</h1>
             <p class="text-gray-400 max-w-2xl mx-auto">透过数字化视觉语言，记录中华老字号的匠心传承与科研跨越。</p>
         </header>
 
-        <section class="grid md:grid-cols-2 gap-12">
+        <div class="grid md:grid-cols-2 gap-12">
             <div class="space-y-4">
-                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10">
-                    <video class="w-full h-full object-cover" controls>
-                        <source src="promo.mp4" type="video/mp4">
-                    </video>
+                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                    <video class="w-full h-full object-cover" controls><source src="promo.mp4" type="video/mp4"></video>
                 </div>
-                <h3 class="text-xl font-bold text-red-500">品牌宣传片</h3>
+                <h3 class="text-xl font-bold text-red-600">品牌宣传片</h3>
             </div>
-            
             <div class="space-y-4">
-                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10">
-                    <video class="w-full h-full object-cover" controls>
-                        <source src="video-cctv.mp4" type="video/mp4">
-                    </video>
+                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                    <video class="w-full h-full object-cover" controls><source src="video-bili.mp4" type="video/mp4"></video>
                 </div>
-                <h3 class="text-xl font-bold text-red-500">CCTV 品质栏目记录</h3>
+                <h3 class="text-xl font-bold text-red-600">Bilibili 专题报道</h3>
             </div>
-        </section>
+            <div class="space-y-4">
+                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                    <video class="w-full h-full object-cover" controls><source src="video-doc.mp4" type="video/mp4"></video>
+                </div>
+                <h3 class="text-xl font-bold text-red-600">历史纪实专题</h3>
+            </div>
+            <div class="space-y-4">
+                <div class="aspect-video-native bg-white/5 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                    <video class="w-full h-full object-cover" controls><source src="video-cctv.mp4" type="video/mp4"></video>
+                </div>
+                <h3 class="text-xl font-bold text-red-600">CCTV 《品质》栏目记录</h3>
+            </div>
+        </div>
     </main>
 
     <footer class="py-20 text-center text-gray-600 border-t border-white/5">
@@ -78,11 +89,7 @@
     <script>
         const btn = document.getElementById('mobile-menu-button');
         const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            console.log('菜单状态已切换'); // 用于调试
-        });
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
     </script>
 </body>
 </html>
